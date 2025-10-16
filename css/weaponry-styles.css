@@ -1,0 +1,122 @@
+/*Warbonds specific styles*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap");
+
+:root {
+  --color-helldiverblack-bg: #222323;
+  --color-helldivergray: #333333;
+  --color-helldiverlightgray: #555555;
+  --color-superearthwhite: #e0e0e0;
+  --color-superearthblue: #01212f;
+  --color-helldiveryellow: #FFE710;
+  --font-poppins: "Poppins", sans-serif;
+  --font-staatliches: "Staatliches", sans-serif;
+  --max-width: 1200px;
+}
+
+.weaponry {
+    display: flex;
+    flex-direction: column;
+}
+
+.weaponry__hero {
+  display: flex;
+  color: var(--color-superearthwhite);
+  background-image: url("../img/weaponry-hero.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 8rem 2rem;
+  object-fit: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+
+.weaponryhero__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.weaponry__figcaption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    gap: 2em;
+    font-family: var(--font-poppins);
+}
+
+.weaponry__figure {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding-bottom: 4em;
+}
+
+.quote__line {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.quote__text {
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--font-poppins);
+}
+
+.weaponry__image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+/*Tablet port css*/
+@media (max-width: 1200px){
+    .weaponry__figure{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote__text {
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--font-poppins);  
+    }
+
+    .weaponry__figcaption {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*Mobile Port css*/
+@media (max-width: 600px){
+    .weaponry__figure{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .quote__text {
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--font-poppins);  
+    }
+
+    .weaponry__figcaption {
+        font-size: 14px;
+        text-align: center;
+    }
+}

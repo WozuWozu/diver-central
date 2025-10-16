@@ -6,24 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Divers Central</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close,menu" />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
-        <img class="header__logo" src="./img/logo.png" />
-        <nav class="header__nav">
+        <a class="header__link" href="./index.html"><img class="header__logo" src="./img/logo.png" /></a>
+        <nav class="header__nav" id="nav-pad">
           <ul class="header__list">
             <li class="header__list-item">
-              <a class="header__link" href="./warbonds">WARBONDS</a>
+              <a class="header__link" href="./warbonds.html">WARBONDS</a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./armory">ARMORY</a>
+              <a class="header__link" href="./armory.html">ARMORY</a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./weaponry">WEAPONRY</a>
+              <a class="header__link" href="./weaponry.html">WEAPONRY</a>
             </li>
           </ul>
+          <span class="header__exit material-symbols-outlined" id="erase">
+          close
+          </span>
         </nav>
+        <span class="header__hamburger material-symbols-outlined" id="burgur">
+        menu
+        </span>
       </div>
     </header>
     <main class="main">
@@ -113,6 +121,8 @@
             <div class="newsletter__field">
               <label class="newsletter__label" for="email">Email: </label>
               <input id="email" class="newsletter__input" />
+
+              <button class="newsletter__button" type="submit">Submit to Officer</button>
             </div>
           </form>
         </div>
@@ -123,5 +133,6 @@
         <a class="footer__link" href="mailto:lovesuperearth@diver.com">LOVESUPEREARTH@DIVER.COM</a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
